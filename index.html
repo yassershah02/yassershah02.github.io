@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main-contact.css">
+    <link rel="stylesheet" href="style/game.css">
+    <title>Yasser's Room</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="hl-logo" src="images/YASSER.svg" alt="YASSER">
+        </div>
+        <div class="header-mid"></div>
+        <div class="header-right">
+            <button class="hr-small"><a href="#main-about">About</a></button>
+            <button class="hr-small"><a href="#main-projects">Projects</a></button>
+            <button class="hr-small"><a href="#main-contact">Contact</a></button>
+            <button class="hr-big"><a href="https://easyupload.io/t01t4j" target="_blank">Resume</a></button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-profile" id="main-profile">
+            <div id="gamebox">
+                <div id="start">
+                    <button id="start-but" onclick="startGame()">start</button>
+                </div>
+                <div id="game" onclick="jump()">
+                    <div id="points" unselectable="on">0</div>
+                    <div id="block"></div>
+                    <div id="hole"></div>
+                    <div id="character"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-about" id="main-about">
+            <img class="mb-selfie" src="images/selfie_yasser.png" alt="yasser">
+            <div class="mb-info">
+                <h2>About</h2>
+                <p>
+                    Challenge and result driven graduate from University Malaysia
+                    Perlis with multiple success in guilding projects start to finish.
+                    Specialize in front-end web development. Seeking internship to continue
+                    developing my skills and begin my career as Software Engineer.
+                </p>
+                <h2>Skills and Expertises</h2>
+                <p>Proficient : HTML, CSS, JavaScript</p>
+                <p>Previous Experience : PHP, SQL, Python, Github, Arduino</p>
+                <p>Soft Skills : Communication, Time Management, Teamwork, Self-Learning</p>
+
+            </div>
+        </div>   
+        <div class="main-projects" id="main-projects">
+            <h2>Projects</h2>
+            <div class="mp-container">
+                <div class="mp-small-container">
+                    <img src="images/waterlevel.jpg" alt="">
+                    <p>Name: Intelligent Bathtub</p>
+                    <!-- <a href="">Github Code</a> -->
+                </div>
+                <div class="mp-small-container">
+                    <img src="images/wesiteProtoype_01.jpg" alt="">
+                    <p>Name: Website Portfolio</p>
+                    <!-- <a href="">Github Code</a> -->
+                </div>
+                <div class="mp-small-container">
+                    <img src="images/fighting_game.png" alt="">
+                    <p>Name: 2D Fighting Game</p>
+                    <!-- <a href="">Github Code</a> -->
+                </div>
+                <div class="mp-small-container">
+                    <img src="images/moistureMonitor.jpg" alt="">
+                    <p>Name: Soil Monitoring System</p>
+                    <!-- <a href="">Github Code</a> -->
+                </div>
+            </div>
+        </div>   
+        <div class="main-contact" id="main-contact">
+            <div class="mc-container">
+                <h2>Contact Form</h2>
+                <form class="mc-form">
+                    <input class="mc-form-subs" type="text" name="Name" placeholder="Full Name" required>
+                    <input class="mc-form-subs" type="email" name="Email" placeholder="Email" required>
+                    <select class="mc-form-subs" name="State">
+                        <option value="Johor">Johor</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Kelantan">Kelantan</option>
+                        <option value="Melaka">Melaka</option>
+                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                        <option value="Pahang">Pahang</option>
+                        <option value="Pulau Pinang">Pulau Pinang</option>
+                        <option value="Perak">Perak</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Selangor">Selangor</option>
+                        <option value="Sarawak">Sarawak</option>
+                        <option value="Terengganu">Terengganu</option>
+                        <option value="Wilayah Persekutuan Kuala Lumpur">Wilayah Persekutuan Kuala Lumpur</option>
+                        <option value="Wilayah Persekutuan Labuan">Wilayah Persekutuan Labuan</option>
+                        <option value="Wilayah Persekutuan Putrajaya">Wilayah Persekutuan Putrajaya</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <textarea class="mc-form-subs" name="Message" placeholder="Message" cols="30" rows="6"></textarea>
+                    <button class="mc-form-but" type="submit">Send</button>
+                </form>
+            </div>
+        </div>         
+    </div>
+
+
+
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,141 @@
+.main{
+    display: grid;
+    grid-template-rows: 500px 500px 1fr 500px;
+}
+.main-profile{
+    background-color: #54e2ff;
+    justify-content: center;
+    text-align: center;
+}
+.main-about{
+    background-color: #dbffff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.mb-selfie{
+    margin: 0 auto;
+    max-height: 1000px;
+    object-fit: contain;
+}
+.mb-info{
+    padding: 15px 20px 0px 5px;
+    margin: auto 0;
+}
+.main-projects{
+    background-color: #44cafb;
+    padding: 20px 2% 5% 2%;
+}
+.main-projects h2{
+    display: block;
+}
+.mp-container{
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3%;
+    padding-bottom: 8%;
+    justify-content: center;
+    text-align: center;
+    row-gap: 5%;
+    column-gap: 4%;
+
+}
+.mp-small-container{
+    border: 1px solid black;
+    background-color: #31b8e9;
+    display: block;
+    max-width: 600px;
+}
+.mp-small-container img{
+    width: 90%;
+    height: 60%;
+    object-fit: contain;
+    margin-top: 5%;
+}
+.main-contact{
+    background-color: #effdfd;
+    display: block;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+.mc-container{
+    border: 1px solid black;
+    background-color: #e6ffff;
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    padding: 5px 0px 60px;
+}
+.mc-form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 70%;
+}
+.mc-form-subs{
+    padding: 7px 14px;
+}
+.mc-form-but{
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: #19ace1;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 780px){
+    .main{
+        grid-template-rows: 500px 1fr 0.5fr 500px;
+    }
+    .main-about{
+        grid-template-columns: 1fr;
+    }
+    .mb-selfie{
+        width: 85%;
+        height: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .mb-info{
+        padding: 0;
+        margin: 15px 10% 35px 10%;
+        min-height: 200px;
+    }
+
+}
+@media (max-width: 590px){
+    .main{
+        grid-template-rows: 500px 1fr 1800px 500px;
+    }
+    .mp-container{
+        grid-template-columns: 1fr;
+        row-gap: 6%;
+    }
+    
+}
+@media (max-width: 540px){
+    .main{
+        grid-template-rows: 500px 1fr 1600px 500px;
+    }
+    .mp-container{
+        row-gap: 4%;
+    }
+}
